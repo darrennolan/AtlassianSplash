@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Atlassian Splash</title>
+
+    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="scripts/atlassian-versions.js"></script>
+
+    <style>
+        body {
+            background: #FFF;
+        }
+        .logo {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .page-container {
+            background: rgba(200, 200, 200, 0.5);
+            border-radius: 20px;
+            margin: 3% auto;
+            padding: 30px;
+            width: 250px;
+        }
+        .page-container a img {
+            border-bottom: solid 5px rgba(255, 255, 255, 0);
+        }
+        .page-container a:hover img {
+            border-bottom: solid 5px #003466;
+        }
+        .app, .app p {
+            margin: 0; padding: 0;
+        }
+        .app-version {
+            margin: -20px 0 0 0; padding: 0;
+            color: #003466;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <p class="logo">
+        <img src="imgs/atlassian.png">
+    </p>
+
+    <div class="page-container">
+        <div class="app" data-toggle="atlassian-version">
+            <p>
+                <a href="/jira">
+                    <img src="imgs/jira.png">
+                </a>
+            </p>
+            <p class="app-version" data-toggle="app-version">
+                Version...
+            </p>
+        </div>
+
+        <div class="app" data-toggle="atlassian-version">
+            <p>
+                <a href="/confluence">
+                    <img src="imgs/confluence.png">
+                </a>
+            </p>
+            <p class="app-version" data-toggle="app-version">
+                Version...
+            </p>
+        </div>
+
+        <div class="app" data-toggle="atlassian-version">
+            <p>
+                <a href="/stash">
+                    <img src="imgs/stash.png">
+                </a>
+            </p>
+            <p class="app-version" data-toggle="app-version">
+                Version...
+            </p>
+        </div>
+
+        <div class="app" data-toggle="atlassian-version">
+            <p>
+                <a href="/bamboo">
+                    <img src="imgs/bamboo.png">
+                </a>
+            </p>
+            <p class="app-version" data-toggle="app-version">
+                Version...
+            </p>
+        </div>
+    </div>
+</body>
+</html>
